@@ -1,0 +1,63 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="serial_setup" id="/6Peh;q0sszdV5;A+tH(" x="-676" y="13">
+    <field name="SERIAL_ID">Serial</field>
+    <field name="SPEED">19200</field>
+  </block>
+  <block type="controls_repeat_ext" id="c)[^U.-:J--MUrf,:{[Y" x="-686" y="70">
+    <value name="TIMES">
+      <block type="math_number" id="CNtnsZ+YMc@qdvFfMP(z">
+        <field name="NUM">1</field>
+      </block>
+    </value>
+    <statement name="DO">
+      <block type="variables_set" id="n)*feQ8BbIyNVs.6^,7[">
+        <field name="VAR">lightval</field>
+        <value name="VALUE">
+          <block type="io_analogread" id="CcOA_}/)6/g=GFpc!m5%">
+            <field name="PIN">A1</field>
+          </block>
+        </value>
+        <next>
+          <block type="serial_print" id="~QI/j)I|S_B^c9tuW~,W">
+            <field name="SERIAL_ID">Serial</field>
+            <field name="NEW_LINE">TRUE</field>
+            <value name="CONTENT">
+              <block type="variables_get" id="m6vCgTiargalyPhW]Vjk">
+                <field name="VAR">lightval</field>
+              </block>
+            </value>
+            <next>
+              <block type="io_analogwrite" id="AtEvu#^)zrh,{Qk}(VA;">
+                <field name="PIN">9</field>
+                <value name="NUM">
+                  <block type="math_arithmetic" id="_iTq4Y?]ptra7HL^)Q5N">
+                    <field name="OP">DIVIDE</field>
+                    <value name="A">
+                      <block type="variables_get" id="ul%4@[b`W-e1z(#136AX">
+                        <field name="VAR">lightval</field>
+                      </block>
+                    </value>
+                    <value name="B">
+                      <block type="math_number" id=":l.4[QsC9=NSzfgY?,8/">
+                        <field name="NUM">10</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <next>
+                  <block type="time_delay" id="nRlm.DNxD6K|udG|dpEz">
+                    <value name="DELAY_TIME_MILI">
+                      <block type="math_number" id="@2QzWGjP[gtz4rOU?dUp">
+                        <field name="NUM">1000</field>
+                      </block>
+                    </value>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+</xml>
