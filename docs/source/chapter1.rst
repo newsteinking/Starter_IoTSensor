@@ -75,3 +75,5 @@ ServerCompilerSettings.ini 설정에서 포트 번호와 Arduino IDE 경로를 �
 
 
 .. image:: ./img/chapter1-5.png
+
+시리얼 모니터에서는 다음처럼 Hello World가 1초 간격으로 찍힌다(1초 딜레이를 줬을경우)

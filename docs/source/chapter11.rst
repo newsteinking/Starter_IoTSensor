@@ -1,32 +1,30 @@
-chapter 11: 음악 지휘자
+chapter 11: I'm thirsty
 ========================================
 
-theremin은  음악가의 손의 움직임에 따라서 음악을 연주하는 악기이다.
-엠봇도 초음파 센서를 통해서 구현해 보자.
-다음 알고리즘으로 프로그래밍을 해보자.
+LED 센서를 이용해 보자.
+LED는 Digital Type으로 1 신호가 오면 켜지고 0 이 오면 커지는 특성을 가진다.
 
-If an object is less than 10cm away
----- Play a high note
-Else If an object is less than 20cm away
----- Play a lower note
-Else If an object is less than 30cm away
----- Play a lower note
-Else If...
-
-.. image:: ./img/chapter11-1.png
+.. image:: ./img/chapter2-1.png
 
 
-
-
-
-나만의 theremin 만들기
+2.1 준비물
 -------------------------
-1.본인의 거리에 맞게 조절하고 음악도 변경해 보자.
 
-2.높은 음이 빨리 소리가 끝나고 낮은 음이 좀더 오래 진행되는데 해결할 수 있는가?
+EASY plug controller Board *1
+EASY plug cable *1
+USB cable *1
+EASY plug Digital White LED Module *1
 
 
 
+2.2 연결 설정
+------------------------
+
+다음처럼 보드의 D2~13 임의의 포트에 끼워주면 된다.
+여기서는 11번 포트로 설정해 보자.
+
+
+.. image:: ./img/chapter2-2.png
 
 
 

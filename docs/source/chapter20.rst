@@ -1,6 +1,5 @@
-chapter 16: Touch alarm
+chapter 20: Vibration alarm
 ==============================================
-
 
 LED 센서를 이용해 보자.
 LED는 Digital Type으로 1 신호가 오면 켜지고 0 이 오면 커지는 특성을 가진다.
@@ -26,8 +25,6 @@ EASY plug Digital White LED Module *1
 
 
 .. image:: ./img/chapter2-2.png
-
-
 
 
 

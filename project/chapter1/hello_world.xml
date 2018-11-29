@@ -1,0 +1,33 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="serial_setup" id="~mOkNd_Z#tSk;)a}8E31" x="115" y="38">
+    <field name="SERIAL_ID">Serial</field>
+    <field name="SPEED">19200</field>
+  </block>
+  <block type="controls_repeat_ext" id="GR7Ok!zg/z9Ee_+Alp(2" x="114" y="80">
+    <value name="TIMES">
+      <block type="math_number" id="3axaOo-d5OGUf769/bN-">
+        <field name="NUM">10</field>
+      </block>
+    </value>
+    <statement name="DO">
+      <block type="serial_print" id="RLp{H3u1vn}H9/YVe1G/">
+        <field name="SERIAL_ID">Serial</field>
+        <field name="NEW_LINE">TRUE</field>
+        <value name="CONTENT">
+          <block type="text" id="l:fe}%^+uAqvu7?b2My)">
+            <field name="TEXT">Hello World</field>
+          </block>
+        </value>
+        <next>
+          <block type="time_delay" id="1Zb6}knleKeA`=0~[Wl~">
+            <value name="DELAY_TIME_MILI">
+              <block type="math_number" id="_rc}w,+k6rDFMl7EejHi">
+                <field name="NUM">1000</field>
+              </block>
+            </value>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+</xml>

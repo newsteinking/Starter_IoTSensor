@@ -1,47 +1,28 @@
-chapter 3: LED 표시하기
-=======================
+chapter 3: Visible breath
+============================
 
 
-3.1 LED Display
--------------------
+LED 센서를 이용해 보자.
+LED는 Digital Type으로 1 신호가 오면 켜지고 0 이 오면 커지는 특성을 가진다.
 
-엠봇에는 2개의 RGB LED가 있다.
-Red- Green -Blue  색깔을 섞어서 다양한 색깔을 얻을 수 있다.
-각 값은 0 ~ 255값을 넣을 수 있다.
+.. image:: ./img/chapter2-1.png
 
 
-.. image:: ./img/chapter3-1.png
+2.1 준비물
+-------------------------
 
-
-블럭은 다음과 같이 보드위에 LED설정 블럭을 쓰면 된다.
-
-
-.. image:: ./img/chapter3-2.png
-
-다음 그림과 같이 왼쪽 오른쪽 모두 선택 할 수 있다.
-
-.. image:: ./img/chapter3-3.png
-
-
-경찰차처럼 깜박이는 LED를 만들어 보자.
-
-
-.. image:: ./img/chapter3-4.png
-
-
-계속 반복되는 LED를 설정하기 위해서는 무한반복 블럭을 사용했고
-한쪽 LED가 켜지고 잠시 시간을 두고 오른쪽 LED를 켜도 되고
-나중에는 동시에 다 녹색으로 켜는 것도 가능하다.
+EASY plug controller Board *1
+EASY plug cable *1
+USB cable *1
+EASY plug Digital White LED Module *1
 
 
 
-3.2 자기만의 LED
--------------------
+2.2 연결 설정
+------------------------
 
-1.각자 LED 득성을 활용하여 다양한 LED 동작을 만들어 보자.
-
-2.그리고 앞장에서 배운 음악을 함께 플레이 하면서 LED를 켜보자.
-
+다음처럼 보드의 D2~13 임의의 포트에 끼워주면 된다.
+여기서는 11번 포트로 설정해 보자.
 
 
-
+.. image:: ./img/chapter2-2.png

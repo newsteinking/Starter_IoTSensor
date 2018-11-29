@@ -1,32 +1,31 @@
-chapter 17: 함수와 파라미터을 활용한 회피프로그램
+chapter 17: Knock Sensing
 ==============================================
 
 
-함수 만들기와 함수내에서 파라미터 생성법을 알아보도록 하자.
-기본으로 회피 프로그램을 만든다.
+LED 센서를 이용해 보자.
+LED는 Digital Type으로 1 신호가 오면 켜지고 0 이 오면 커지는 특성을 가진다.
 
-.. image:: ./img/chapter17-1.png
-
-회피 프로그램 블럭을 클릭하고 우클릭하면 편집이 나온다.
-편집에서 숫자 편집을 클릭하고 숫자로 쓸 변수명을 넣어 주면 된다.
-
-.. image:: ./img/chapter17-2.png
-
-그리고 함수에 넣어줄 숫자를 넣어주면 숫자값이 일괄로 적용된다.
-
-.. image:: ./img/chapter17-3.png
+.. image:: ./img/chapter2-1.png
 
 
-
-
-추가 과제
+2.1 준비물
 -------------------------
-1.함수에 다른값을 넣어서 실행해 보자.
 
-2.방향을 나타내는 변수를 넣어 보자. 0 : left , 1: right ,2 : random
+EASY plug controller Board *1
+EASY plug cable *1
+USB cable *1
+EASY plug Digital White LED Module *1
 
-3.다른 함수를 하나 만들어 보자.
 
+
+2.2 연결 설정
+------------------------
+
+다음처럼 보드의 D2~13 임의의 포트에 끼워주면 된다.
+여기서는 11번 포트로 설정해 보자.
+
+
+.. image:: ./img/chapter2-2.png
 
 
 

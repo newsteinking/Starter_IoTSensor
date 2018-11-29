@@ -1,28 +1,30 @@
-chapter 19: 시리얼 통신하기
+chapter 19: Fire alarm
 ==============================================
 
-mblock의 확장- 통신을 선택하면 다음 그림처럼 통신관련 블럭이 올라온다.
+LED 센서를 이용해 보자.
+LED는 Digital Type으로 1 신호가 오면 켜지고 0 이 오면 커지는 특성을 가진다.
 
-.. image:: ./img/chapter19-1.png
-
-
-이것을 사용하게 되면 PC- 엠블럭간의 통신을 할 수 있다.
-아두이노 IDE의 경우 아두이노 보드와 PC간 시리얼 통신을 하는 원리와 동일하다.
-
-나중에 좀더 자세히 통신에 대해서 배우도록 하자.
+.. image:: ./img/chapter2-1.png
 
 
-
-
-
-추가 과제
+2.1 준비물
 -------------------------
-1. to be continued ....
+
+EASY plug controller Board *1
+EASY plug cable *1
+USB cable *1
+EASY plug Digital White LED Module *1
 
 
 
+2.2 연결 설정
+------------------------
+
+다음처럼 보드의 D2~13 임의의 포트에 끼워주면 된다.
+여기서는 11번 포트로 설정해 보자.
 
 
+.. image:: ./img/chapter2-2.png
 
 
 

@@ -1,26 +1,30 @@
-chapter 7: 노래하고 춤추는 엠봇
+chapter 7: Temperature measuring
 ========================================
 
+LED 센서를 이용해 보자.
+LED는 Digital Type으로 1 신호가 오면 켜지고 0 이 오면 커지는 특성을 가진다.
 
-이번 장에서는 노래하고 춤추는 mbot을 프로그램 해보자.
-
-충추는 동작 파트는 다음과 같이 처리한다.
+.. image:: ./img/chapter2-1.png
 
 
-.. image:: ./img/chapter7-1.png
-
-음악 파트는 다음과 같이 처리한다.
-
-.. image:: ./img/chapter7-2.png
-.. image:: ./img/chapter7-3.png
-
-자기만의 mbot 동작하기
+2.1 준비물
 -------------------------
 
-1.각자 춤추는 동작과 음악을 만들어 보자.
+EASY plug controller Board *1
+EASY plug cable *1
+USB cable *1
+EASY plug Digital White LED Module *1
 
 
 
+2.2 연결 설정
+------------------------
+
+다음처럼 보드의 D2~13 임의의 포트에 끼워주면 된다.
+여기서는 11번 포트로 설정해 보자.
+
+
+.. image:: ./img/chapter2-2.png
 
 
 

@@ -1,32 +1,30 @@
-chapter 15: 라인 숫자 세기
+chapter 15: Button-controlled lamp
 ========================================
 
-라인트레이서 센서를 이용해서 라인갯수를 세는 프로그램을 짜보자.
-알고리즘은 다음을 참고한다.
+LED 센서를 이용해 보자.
+LED는 Digital Type으로 1 신호가 오면 켜지고 0 이 오면 커지는 특성을 가진다.
 
-Declare a variable.
-Move forward.
-Loop:
----- If we see a line
----- ---- Add one to the variable.
-End Loop
+.. image:: ./img/chapter2-1.png
 
 
-
-.. image:: ./img/chapter15-1.png
-
-
-
-추가 과제
+2.1 준비물
 -------------------------
-1.변수값을 확인 할 수 있는 블락을 사용해서 표시하세요.
 
-2.여기서 변수값이 틀릴것이다. 어떻게 하면 변수값을 정확히 맞출수 있는가.( 0,1,2 모두 Black line)
+EASY plug controller Board *1
+EASY plug cable *1
+USB cable *1
+EASY plug Digital White LED Module *1
 
 
 
-.. image:: ./img/chapter15-2.png
+2.2 연결 설정
+------------------------
 
+다음처럼 보드의 D2~13 임의의 포트에 끼워주면 된다.
+여기서는 11번 포트로 설정해 보자.
+
+
+.. image:: ./img/chapter2-2.png
 
 
 
