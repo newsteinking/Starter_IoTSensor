@@ -1,0 +1,79 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="variables_set" id="]~T~doNGcSu`(vstx9G," x="-26" y="81">
+    <field name="VAR">item</field>
+    <value name="VALUE">
+      <block type="math_number" id="#@m@ZJKjrMe*ygbFSR(,">
+        <field name="NUM">0</field>
+      </block>
+    </value>
+    <next>
+      <block type="controls_for" id="e-M2%M49Lvb(rp!d;Gxj">
+        <field name="VAR">item</field>
+        <value name="FROM">
+          <block type="math_number" id="{9~3:,J,iz^7D.z)Z7[s">
+            <field name="NUM">0</field>
+          </block>
+        </value>
+        <value name="TO">
+          <block type="math_number" id="kyK;y(QDbm_IR)R?V8A(">
+            <field name="NUM">255</field>
+          </block>
+        </value>
+        <value name="BY">
+          <block type="math_number" id="t3-Hi@F%v3/QNAS`cZaW">
+            <field name="NUM">1</field>
+          </block>
+        </value>
+        <statement name="DO">
+          <block type="io_digitalwrite" id="ok3quZ%0P6T46i.pevy8">
+            <field name="PIN">13</field>
+            <value name="STATE">
+              <block type="io_highlow" id="B@@{xL9L^:1|2ecvz.n|">
+                <field name="STATE">HIGH</field>
+              </block>
+            </value>
+            <next>
+              <block type="io_analogwrite" id="bH|=3%`L%_zsb|;]ted@">
+                <field name="PIN">11</field>
+                <value name="NUM">
+                  <block type="variables_get" id="oaD2.7wqu.*)9_Ir1Z)Y">
+                    <field name="VAR">item</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="variables_set" id="bDLNU,cT;R{Li~p)K6K5">
+                    <field name="VAR">item</field>
+                    <value name="VALUE">
+                      <block type="math_arithmetic" id="GOJXlW)V%y88.A53,S-I">
+                        <field name="OP">ADD</field>
+                        <value name="A">
+                          <block type="variables_get" id="G)?t/E`~-v[jGAdsNbuD">
+                            <field name="VAR">item</field>
+                          </block>
+                        </value>
+                        <value name="B">
+                          <block type="math_number" id="f%O=foAz{}RVRJl?2Tbk">
+                            <field name="NUM">5</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="time_delay" id="p;gESs5?hCLo6v]1eUxQ">
+                        <value name="DELAY_TIME_MILI">
+                          <block type="math_number" id="5ZEOHjid7WJfJd8^pIP?">
+                            <field name="NUM">1000</field>
+                          </block>
+                        </value>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </statement>
+      </block>
+    </next>
+  </block>
+</xml>

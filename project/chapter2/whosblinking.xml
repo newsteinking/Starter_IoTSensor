@@ -1,0 +1,47 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="controls_repeat_ext" id="#qTEwjBPgRmU5Q81P@@F" x="-104" y="100">
+    <value name="TIMES">
+      <block type="math_number" id="@jd/o_.ZtJa]Miua*wTH">
+        <field name="NUM">10</field>
+      </block>
+    </value>
+    <statement name="DO">
+      <block type="io_digitalwrite" id="*2P,daQ7}zHOTOIQIbS!">
+        <field name="PIN">9</field>
+        <value name="STATE">
+          <block type="io_highlow" id="?~;,L29HREBi~4_{ua`i">
+            <field name="STATE">HIGH</field>
+          </block>
+        </value>
+        <next>
+          <block type="time_delay" id="DwOB;RWs!Oc7R7=zK8{q">
+            <value name="DELAY_TIME_MILI">
+              <block type="math_number" id="sBu^TMAJMoN2-M.qnoA-">
+                <field name="NUM">1000</field>
+              </block>
+            </value>
+            <next>
+              <block type="io_digitalwrite" id="U9PXg~{hXbP%SKy(b7/X">
+                <field name="PIN">9</field>
+                <value name="STATE">
+                  <block type="io_highlow" id="ZPCB4%.1KQa!pr}?1]yF">
+                    <field name="STATE">LOW</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="time_delay" id="=D(5T{I:~`51x3X6DEMj">
+                    <value name="DELAY_TIME_MILI">
+                      <block type="math_number" id="QOGTXpBk,T%@kI]R;fT1">
+                        <field name="NUM">1000</field>
+                      </block>
+                    </value>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+</xml>
