@@ -1,0 +1,67 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="variables_set" id="Hy%9}@qxYh`/7h@Sv5T3" x="-107" y="94">
+    <field name="VAR">item</field>
+    <value name="VALUE">
+      <block type="math_number" id="%ZU,q,6(^.0dKAM=3kFp">
+        <field name="NUM">262</field>
+      </block>
+    </value>
+    <next>
+      <block type="variables_set" id="oKskKHK2t9qYDq2?R]EO">
+        <field name="VAR">nosound</field>
+        <value name="VALUE">
+          <block type="math_number" id="xjEcMyha5O*oJM#?5Fq:">
+            <field name="NUM">0</field>
+          </block>
+        </value>
+        <next>
+          <block type="controls_repeat_ext" id="S,np71=2BtxxADRuK1n.">
+            <value name="TIMES">
+              <block type="math_number" id="JbnryV~{D[hC%b%%m=9J">
+                <field name="NUM">10</field>
+              </block>
+            </value>
+            <statement name="DO">
+              <block type="io_analogwrite" id="h[`~}hqDe?37ZabNMe_!">
+                <field name="PIN">9</field>
+                <value name="NUM">
+                  <block type="variables_get" id="+~wEATH2NcEmEq%bS8K#">
+                    <field name="VAR">item</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="time_delay" id="i:PSXN~hJZC%;:7p)wp2">
+                    <value name="DELAY_TIME_MILI">
+                      <block type="math_number" id="QJkG9+1THtAmkM~exTf~">
+                        <field name="NUM">1000</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="io_analogwrite" id="3WF-RM@nv_M1W?NF`z@I">
+                        <field name="PIN">9</field>
+                        <value name="NUM">
+                          <block type="variables_get" id="inLBbsFEYJN_qv|%*1p]">
+                            <field name="VAR">nosound</field>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="time_delay" id="Vqz+QCQW_(6,myDDGT/%">
+                            <value name="DELAY_TIME_MILI">
+                              <block type="math_number" id=":{O,|5o)sQir]9I2*Og4">
+                                <field name="NUM">1000</field>
+                              </block>
+                            </value>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </statement>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+</xml>
