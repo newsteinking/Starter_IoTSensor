@@ -43,4 +43,3 @@ IoT Sensor
    chapter19
    chapter20
    chapter21
-   chapter22
