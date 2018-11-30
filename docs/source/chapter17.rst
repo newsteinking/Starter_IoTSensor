@@ -2,32 +2,71 @@ chapter 17: Knock Sensing
 ==============================================
 
 
-LED 센서를 이용해 보자.
-LED는 Digital Type으로 1 신호가 오면 켜지고 0 이 오면 커지는 특성을 가진다.
-
-.. image:: ./img/chapter2-1.png
+노크에 대한 센싱을 하는 센서이다.
+이 스위치는 노크에 대해서 스위치로도 쓰일수 있다.
 
 
-2.1 준비물
+.. image:: ./img/chapter17-1.png
+
+
+17.1 준비물
 -------------------------
 
 EASY plug controller Board *1
-EASY plug cable *1
-USB cable *1
+EASY plug cable *2 USB cable *1
 EASY plug Digital White LED Module *1
+EASY plug Knock Sensor *1
+
+센서 스펙을 보자
+
+Working voltage: 5V
+Size: 38*20mm
+Weight: 5g
 
 
 
-2.2 연결 설정
+17.2 연결 설정
 ------------------------
 
-다음처럼 보드의 D2~13 임의의 포트에 끼워주면 된다.
-여기서는 11번 포트로 설정해 보자.
+디지털 LED는 9번을 사용하도록 하자
+노크 센서도 디지털 센서이므로 8번을 이용하도록 하자.
+
+.. image:: ./img/chapter17-2.png
 
 
-.. image:: ./img/chapter2-2.png
+17.3 code
+------------------------
+블락코드는 다음과 같다.
+
+.. image:: ./img/chapter17-3.png
+
+아두이노 코드는 다음과 같다.
+시리얼로 연결해서 값을 찍어 보면 적절히 노크 센서 디지털 값을 확인할 수 있다.
+노크센서가 정말 많이 해야 잠깐 동작하는 정도이다.
 
 
+
+.. code-block:: python
+
+
+    void setup() {
+      Serial.begin(19200);
+      pinMode(8, INPUT);
+      pinMode(9, OUTPUT);
+    }
+
+    void loop() {
+      for (int count = 0; count < 10; count++) {
+        if (HIGH == digitalRead(8)) {
+          digitalWrite(9, LOW);
+          Serial.println(true);
+        } else {
+          digitalWrite(9, HIGH);
+          Serial.println(false);
+        }
+      }
+
+    }
 
 
 

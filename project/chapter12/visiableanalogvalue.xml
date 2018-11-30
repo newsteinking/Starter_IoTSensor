@@ -1,0 +1,94 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="serial_setup" id="GFSpVBUNAEK!yd5?n.=P" x="93" y="72">
+    <field name="SERIAL_ID">Serial</field>
+    <field name="SPEED">19200</field>
+  </block>
+  <block type="variables_set" id="cfWr+C~e|wqJ{48-dfH`" x="108" y="173">
+    <field name="VAR">rotationval</field>
+    <value name="VALUE">
+      <block type="math_number" id="GGdyc:wO6fSxkxTV=?F7">
+        <field name="NUM">0</field>
+      </block>
+    </value>
+    <next>
+      <block type="controls_repeat_ext" id=".TZx!VrbCO1(z(Oz8=+f">
+        <value name="TIMES">
+          <block type="math_number" id="FDfTFR{W574oP9-|!cz?">
+            <field name="NUM">10</field>
+          </block>
+        </value>
+        <statement name="DO">
+          <block type="variables_set" id="]9go)OWB*k9-zhD_/7by">
+            <field name="VAR">rotationval</field>
+            <value name="VALUE">
+              <block type="io_analogread" id="/po8|^z7jSCHd2O0;ykc">
+                <field name="PIN">A1</field>
+              </block>
+            </value>
+            <next>
+              <block type="serial_print" id="X=YSw#jwMwv0_C,]IBWq">
+                <field name="SERIAL_ID">Serial</field>
+                <field name="NEW_LINE">TRUE</field>
+                <value name="CONTENT">
+                  <block type="variables_get" id="sfB}KtvCS{)wSJK~cKO|">
+                    <field name="VAR">rotationval</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="variables_set" id="OrGWBf|j6vtEcDQiwqll">
+                    <field name="VAR">modval</field>
+                    <value name="VALUE">
+                      <block type="math_arithmetic" id="D`v+ajygT0=Uv#H}Crp*">
+                        <field name="OP">DIVIDE</field>
+                        <value name="A">
+                          <block type="variables_get" id="cNv[9MVjPCF/iemV!rwW">
+                            <field name="VAR">rotationval</field>
+                          </block>
+                        </value>
+                        <value name="B">
+                          <block type="math_number" id="}dHdfC(iMH=@dnY;bKGI">
+                            <field name="NUM">4</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="io_analogwrite" id="y-zMHJOQ*2/hJ+gCZ(A|">
+                        <field name="PIN">9</field>
+                        <value name="NUM">
+                          <block type="variables_get" id="5q):v3o4`.{z-P0!_(HK">
+                            <field name="VAR">modval</field>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="serial_print" id="hDg@!06-9f=-NA,L-z|6">
+                            <field name="SERIAL_ID">Serial</field>
+                            <field name="NEW_LINE">TRUE</field>
+                            <value name="CONTENT">
+                              <block type="variables_get" id="O5?}xA*tea.I]fWJ?[xC">
+                                <field name="VAR">modval</field>
+                              </block>
+                            </value>
+                            <next>
+                              <block type="time_delay" id="h+*=)NNR]#/?z;b~LtIH">
+                                <value name="DELAY_TIME_MILI">
+                                  <block type="math_number" id="rX+`fEy3F~p)sU%eDE[a">
+                                    <field name="NUM">1000</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </statement>
+      </block>
+    </next>
+  </block>
+</xml>

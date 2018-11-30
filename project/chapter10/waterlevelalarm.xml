@@ -1,0 +1,102 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="serial_setup" id="J|d{MKBglq)|[3lWrghb" x="-313" y="-48">
+    <field name="SERIAL_ID">Serial</field>
+    <field name="SPEED">19200</field>
+  </block>
+  <block type="variables_set" id="FTU;}+oh2v*zR`#kJr8M" x="-377" y="44">
+    <field name="VAR">watervalue</field>
+    <value name="VALUE">
+      <block type="math_number" id="yfc|)u{Uw}9)cBC0qGF-">
+        <field name="NUM">0</field>
+      </block>
+    </value>
+    <next>
+      <block type="controls_repeat_ext" id="v8v:lp`,Hpot3rWk({:r">
+        <value name="TIMES">
+          <block type="math_number" id="%k+PTr=iBX]RtPNI=h#)">
+            <field name="NUM">1</field>
+          </block>
+        </value>
+        <statement name="DO">
+          <block type="variables_set" id="zYIOSnEs,{#{,/4}YI~B">
+            <field name="VAR">watervalue</field>
+            <value name="VALUE">
+              <block type="io_analogread" id="x+cAGfwN`xS(q(/|bA`7">
+                <field name="PIN">A1</field>
+              </block>
+            </value>
+            <next>
+              <block type="serial_print" id="%Zp;wlFrEBV-#11sxT|t">
+                <field name="SERIAL_ID">Serial</field>
+                <field name="NEW_LINE">TRUE</field>
+                <value name="CONTENT">
+                  <block type="variables_get" id="AZ0Q.bc;0,J^/(U^sl{=">
+                    <field name="VAR">watervalue</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="controls_if" id="oilQIs)Ggv65yMeY5.7Y">
+                    <mutation else="1"></mutation>
+                    <value name="IF0">
+                      <block type="logic_compare" id="SP_p%+AmzRiH4|rpb1qk">
+                        <field name="OP">GT</field>
+                        <value name="A">
+                          <block type="variables_get" id="L-J!*jT|t7?oATKV(0|g">
+                            <field name="VAR">watervalue</field>
+                          </block>
+                        </value>
+                        <value name="B">
+                          <block type="math_number" id="Ka54|hd56}xH@kCbT:OX">
+                            <field name="NUM">400</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <statement name="DO0">
+                      <block type="io_digitalwrite" id="uE/In@NlHi`7P.H*[mlG">
+                        <field name="PIN">9</field>
+                        <value name="STATE">
+                          <block type="io_highlow" id="#+DBg+/@iRSs:4H{t2Fy">
+                            <field name="STATE">HIGH</field>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="time_delay" id="W3Dh_pv5Y9o@EbGd@#pP">
+                            <value name="DELAY_TIME_MILI">
+                              <block type="math_number" id="B2?nK7C,5ANG0FShlWnD">
+                                <field name="NUM">1000</field>
+                              </block>
+                            </value>
+                          </block>
+                        </next>
+                      </block>
+                    </statement>
+                    <statement name="ELSE">
+                      <block type="io_digitalwrite" id="`bKUH~9N,)OKPU^M.w1h">
+                        <field name="PIN">9</field>
+                        <value name="STATE">
+                          <block type="io_highlow" id="g%d]8@H8,[L9rJOA*7B]">
+                            <field name="STATE">LOW</field>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="time_delay" id="}f+DUZ+3)5{=E{LUzOsZ">
+                            <value name="DELAY_TIME_MILI">
+                              <block type="math_number" id="{Y_#UVl0@vP^a-0vX6()">
+                                <field name="NUM">1000</field>
+                              </block>
+                            </value>
+                          </block>
+                        </next>
+                      </block>
+                    </statement>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </statement>
+      </block>
+    </next>
+  </block>
+</xml>

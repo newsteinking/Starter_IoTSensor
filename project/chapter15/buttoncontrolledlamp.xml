@@ -1,0 +1,84 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="serial_setup" id="GFSpVBUNAEK!yd5?n.=P" x="93" y="72">
+    <field name="SERIAL_ID">Serial</field>
+    <field name="SPEED">19200</field>
+  </block>
+  <block type="controls_repeat_ext" id="t-gPh|KCIT5S:~tb1KQT" x="85" y="152">
+    <value name="TIMES">
+      <block type="math_number" id="dS*Q!oW?b7ZMr_J`*6}?">
+        <field name="NUM">10</field>
+      </block>
+    </value>
+    <statement name="DO">
+      <block type="controls_if" id="J~)KsX0Wx._64l3{nB:8">
+        <mutation else="1"></mutation>
+        <value name="IF0">
+          <block type="logic_compare" id="cAzbF9+xg@O-YC7kw6@7">
+            <field name="OP">EQ</field>
+            <value name="A">
+              <block type="logic_boolean" id="egQjsev*l+6_nTDLQzI3">
+                <field name="BOOL">FALSE</field>
+              </block>
+            </value>
+            <value name="B">
+              <block type="io_digitalread" id="t-Rmc9;a1WtT%J]uZDs%">
+                <field name="PIN">8</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="io_digitalwrite" id="B%c0l=z6pTybxp(UsFCT">
+            <field name="PIN">9</field>
+            <value name="STATE">
+              <block type="io_highlow" id="tSr}5QIv|gYnO64]M))}">
+                <field name="STATE">HIGH</field>
+              </block>
+            </value>
+            <next>
+              <block type="serial_print" id="=g{KSU(x^MB7EsNLbW~+">
+                <field name="SERIAL_ID">Serial</field>
+                <field name="NEW_LINE">TRUE</field>
+                <value name="CONTENT">
+                  <block type="logic_boolean" id="BcJxb|YA@kOu]DzVdHCl">
+                    <field name="BOOL">TRUE</field>
+                  </block>
+                </value>
+              </block>
+            </next>
+          </block>
+        </statement>
+        <statement name="ELSE">
+          <block type="io_digitalwrite" id="t2[7gPTr;u7gP2Zmm1;B">
+            <field name="PIN">9</field>
+            <value name="STATE">
+              <block type="io_highlow" id="UZ)8+5:pdh5]C]YC%c6z">
+                <field name="STATE">LOW</field>
+              </block>
+            </value>
+            <next>
+              <block type="serial_print" id="n50IV%+wW!Sa-rM~{.AQ">
+                <field name="SERIAL_ID">Serial</field>
+                <field name="NEW_LINE">TRUE</field>
+                <value name="CONTENT">
+                  <block type="logic_boolean" id="6.6Y;wn5Z8|vOaIZG~d+">
+                    <field name="BOOL">FALSE</field>
+                  </block>
+                </value>
+              </block>
+            </next>
+          </block>
+        </statement>
+        <next>
+          <block type="time_delay" id="zuaK~=j`q;+]JP8{rZ2#">
+            <value name="DELAY_TIME_MILI">
+              <block type="math_number" id="FJt{IPC:4#7mF~,HG1V1">
+                <field name="NUM">1000</field>
+              </block>
+            </value>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+</xml>

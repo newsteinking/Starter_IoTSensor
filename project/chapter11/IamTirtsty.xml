@@ -1,0 +1,104 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="serial_setup" id="GFSpVBUNAEK!yd5?n.=P" x="93" y="72">
+    <field name="SERIAL_ID">Serial</field>
+    <field name="SPEED">19200</field>
+  </block>
+  <block type="variables_set" id="5MUM9Aevtj?i2A-i4!dP" x="110" y="157">
+    <field name="VAR">soilval</field>
+    <value name="VALUE">
+      <block type="math_number" id="%pr3i;d(K,L2(6s{de?6">
+        <field name="NUM">0</field>
+      </block>
+    </value>
+    <next>
+      <block type="controls_repeat_ext" id="-gS[b1~+0G)qIdZROfP(">
+        <value name="TIMES">
+          <block type="math_number" id="+;Z4uoXa:BOz~|sN8vs;">
+            <field name="NUM">10</field>
+          </block>
+        </value>
+        <statement name="DO">
+          <block type="variables_set" id="r8qL]MwlREU@+=4YFs~L">
+            <field name="VAR">soilval</field>
+            <value name="VALUE">
+              <block type="io_analogread" id="0lgu=w__+F?wPB8#?z{?">
+                <field name="PIN">A1</field>
+              </block>
+            </value>
+            <next>
+              <block type="serial_print" id="*bR,2Xji7uw]VqNy5_L@">
+                <field name="SERIAL_ID">Serial</field>
+                <field name="NEW_LINE">TRUE</field>
+                <value name="CONTENT">
+                  <block type="variables_get" id=".s)ovw.V~+k9Rhv+i.[u">
+                    <field name="VAR">soilval</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="controls_if" id="{_-k={bS@5fk7hq?[zbC">
+                    <mutation else="1"></mutation>
+                    <value name="IF0">
+                      <block type="logic_operation" id="8z}{-Xg.N3Lp@~4e0|[2">
+                        <field name="OP">AND</field>
+                        <value name="A">
+                          <block type="logic_compare" id="2jYSr1]D`b@?MsO:2^B6">
+                            <field name="OP">GTE</field>
+                            <value name="A">
+                              <block type="variables_get" id="OYh)ZS=VX_uk_/V0a+Ge">
+                                <field name="VAR">item</field>
+                              </block>
+                            </value>
+                            <value name="B">
+                              <block type="math_number" id="f0yS5#KEdw+aZbGszZ8y">
+                                <field name="NUM">300</field>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                        <value name="B">
+                          <block type="logic_compare" id="8[M#AmTOz,6H;lwxjqZd">
+                            <field name="OP">LTE</field>
+                            <value name="A">
+                              <block type="variables_get" id="AGCurmVWfuAbBGQi{3et">
+                                <field name="VAR">item</field>
+                              </block>
+                            </value>
+                            <value name="B">
+                              <block type="math_number" id="IBeJv#6V#e:v={+dN{sZ">
+                                <field name="NUM">500</field>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <statement name="DO0">
+                      <block type="io_digitalwrite" id="PS`QWn[]}4Yv)v=EwEfy">
+                        <field name="PIN">9</field>
+                        <value name="STATE">
+                          <block type="io_highlow" id=";D-8(/G#;?_tORY!(5-g">
+                            <field name="STATE">LOW</field>
+                          </block>
+                        </value>
+                      </block>
+                    </statement>
+                    <statement name="ELSE">
+                      <block type="io_digitalwrite" id="mfH^js#*W{0Voyg%Qk/e">
+                        <field name="PIN">9</field>
+                        <value name="STATE">
+                          <block type="io_highlow" id="D?1B80dRp++0UC+(5t`R">
+                            <field name="STATE">HIGH</field>
+                          </block>
+                        </value>
+                      </block>
+                    </statement>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </statement>
+      </block>
+    </next>
+  </block>
+</xml>
