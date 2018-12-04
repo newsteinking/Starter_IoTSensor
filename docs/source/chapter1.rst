@@ -17,18 +17,12 @@ arduino block 프로그램은 다음과 같다.
 1. https://github.com/carlosperate/ardublockly.wiki.git
 
 windows용 다운로드 링크 :
+
 http://ardublockly-builds.s3-website-us-west-2.amazonaws.com/index.html?prefix=windows/
-또는
 
 
-git clone https://github.com/carlosperate/ardublockly.git
-
-cd ardublockly
-
-git submodule update --init --recursive
 
 
-2. https://github.com/BlocklyDuino/BlocklyDuino
 
 
 1번을 PC에 셋업해서 실행시키면 다음 화면이 뜬다.
