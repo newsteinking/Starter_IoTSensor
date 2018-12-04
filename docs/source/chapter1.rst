@@ -32,6 +32,7 @@ git submodule update --init --recursive
 
 
 1번을 PC에 셋업해서 실행시키면 다음 화면이 뜬다.
+
 .. image:: ./img/chapter1-2.png
 
 
