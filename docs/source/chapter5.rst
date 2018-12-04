@@ -11,8 +11,11 @@ chapter 5: Make a sound
 -------------------------
 
 EASY plug controller Board *1
+
 EASY plug cable *1
+
 USB cable *1
+
 EASY plug Active Buzzer Module *1
 
 

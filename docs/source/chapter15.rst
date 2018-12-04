@@ -12,16 +12,23 @@ chapter 15: Button-controlled lamp
 -------------------------
 
 EASY plug controller Board *1
+
 EASY plug cable *2
+
 USB cable *1
+
 EASY plug Digital White LED Module *1
+
 EASY plug Digital Push Button *1
 
 버튼 스위치의 스펙은 다음과 같다.
 
 Supply Voltage: 3.3V to 5V
+
 Easy to 'plug and play'
+
 Large button and high-quality first-class cap
+
 Interface: Digital
 
 디지털 스위치이다.

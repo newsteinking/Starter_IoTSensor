@@ -16,21 +16,32 @@ chapter 10: Water level alarm
 
 
 EASY plug controller Board *1
+
 EASY plug cable *2
+
 USB cable *1
+
 EASY plug Active Buzzer Module *1
+
 EASY plug Water Sensor *1
 
 
 스펙은 다음과 같다.
 
 Operating voltage: DC5V
+
 Operating current: ﹤20mA
+
 Sensor type: Analog
+
 Detection area: 40mm x16mm
+
 Humanized design: Anti-slippery semi-lunar recess
+
 Operating temperature: 10%~90% without condensation
+
 Size: 68.3 x 20mm
+
 Weight: 5g
 
 

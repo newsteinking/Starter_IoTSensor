@@ -13,8 +13,11 @@ LED 센서를 이용해 보자.
 -------------------------
 
 EASY plug controller Board *1
+
 EASY plug cable *1
+
 USB cable *1
+
 EASY plug Digital White LED Module *1
 
 

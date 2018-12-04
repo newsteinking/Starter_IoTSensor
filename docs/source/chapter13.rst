@@ -13,15 +13,21 @@ chapter 13: Magnetic field detecting
 -------------------------
 
 EASY plug controller Board *1
+
 EASY plug cable *2
+
 USB cable x1
+
 Magnetic-iron *1 (not included)
+
 EASY plug Digital White LED Module *1
+
 EASY plug Hall Magnetic Sensor *1
 
 자기 센서의 스펙은 다음과 같다.
 
 Detection range: up to 75px
+
 Output: digital on/off
 
 

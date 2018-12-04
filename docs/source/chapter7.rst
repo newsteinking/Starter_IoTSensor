@@ -7,9 +7,13 @@ chapter 7: Temperature measuring
 아날로드 센서는 온도 센서의 기본이며 센서값을 보드로 전달하게 된다.
 
 Interface type: analog
+
 Working voltage: 5V
+
 Temperature range: -55℃～315℃
+
 Size: 38*20mm
+
 Weight: 5g
 
 
@@ -21,8 +25,11 @@ Weight: 5g
 -------------------------
 
 EASY plug controller Board *1
+
 EASY plug cable *1
+
 USB cable *1
+
 EASY plug Analog Temperature Sensor *1
 
 

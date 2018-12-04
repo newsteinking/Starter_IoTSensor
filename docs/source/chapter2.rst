@@ -11,8 +11,11 @@ LED는 Digital Type으로 1 신호가 오면 켜지고 0 이 오면 커지는 �
 -------------------------
 
 EASY plug controller Board *1
+
 EASY plug cable *1
+
 USB cable *1
+
 EASY plug Digital White LED Module *1
 
 

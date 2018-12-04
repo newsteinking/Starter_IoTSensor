@@ -12,14 +12,21 @@ chapter 14: Collision detecting
 -------------------------
 
 EASY plug controller Board *1
+
 EASY plug cable *2
+
 USB cable *1
+
 EASY plug Digital White LED Module *1
+
 EASY plug Collision Sensor *1
 
 센서 스펙은 다음과 같다.
+
 With indicator light
+
 Size: 39 * 20mm
+
 Weight: 7g
 
 

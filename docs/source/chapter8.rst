@@ -12,9 +12,13 @@ chapter 8: Make a sound-controlled lamp
 -------------------------
 
 EASY plug controller Board *1
+
 EASY plug cable *1
+
 USB cable *1
+
 EASY plug Digital White LED Module *1
+
 EASY plug Analog Sound Sensor *1
 
 

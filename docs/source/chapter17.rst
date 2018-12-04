@@ -13,14 +13,19 @@ chapter 17: Knock Sensing
 -------------------------
 
 EASY plug controller Board *1
+
 EASY plug cable *2 USB cable *1
+
 EASY plug Digital White LED Module *1
+
 EASY plug Knock Sensor *1
 
 센서 스펙을 보자
 
 Working voltage: 5V
+
 Size: 38*20mm
+
 Weight: 5g
 
 

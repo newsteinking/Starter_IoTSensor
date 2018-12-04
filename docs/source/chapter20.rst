@@ -13,15 +13,23 @@ chapter 20: Vibration alarm
 -------------------------
 
 EASY plug controller Board *1
+
 EASY plug cable *2
+
 USB cable *1
+
 EASY plug Active Buzzer module *1
+
 EASY plug Vibration Sensor *1
 
 센서 스펙을 보도록 하자.
+
 IO Type: Digital
+
 Supply Voltage: 3.3V to 5V
+
 Size: 46.4*16.6mm
+
 Weight: 7g
 
 디지털 센서이다.

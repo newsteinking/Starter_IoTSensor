@@ -12,8 +12,11 @@ chapter 6: Who's singing
 -------------------------
 
 EASY plug controller Board *1
+
 EASY plug cable *1
+
 USB cable *1
+
 EASY plug Passive Buzzer module *1
 
 

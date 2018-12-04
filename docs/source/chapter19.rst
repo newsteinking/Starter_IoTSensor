@@ -11,20 +11,31 @@ chapter 19: Fire alarm
 -------------------------
 
 EASY plug controller Board *1
+
 EASY plug cable *2
+
 USB cable *1
+
 Lighter *1 (not included)
+
 EASY plug Active Buzzer module *1
+
 EASY plug Flame Sensor *1
 
 센서 스펙을 보자
 
 Supply Voltage: 3.3V to 5V
+
 Detection range: 500px (4.8V) ~ 2500px (1V)
+
 Rang of Spectral Bandwidth: 760nm to 1100nm
+
 Operating temperature: -25℃to 85℃
+
 Interface: digital
+
 Size: 49*16.7mm
+
 Weight: 6g
 
 

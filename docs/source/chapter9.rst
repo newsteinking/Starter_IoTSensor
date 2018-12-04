@@ -13,9 +13,13 @@ chapter 9: Make a light-controlled lamp
 -------------------------
 
 EASY plug controller Board *1
+
 EASY plug cable *2
+
 USB cable *1
+
 EASY plug Digital White LED Module *1
+
 EASY plug Photocell Sensor *1
 
 

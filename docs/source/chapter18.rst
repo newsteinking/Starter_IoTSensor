@@ -13,15 +13,22 @@ chapter 18: Tilt Sensor
 -------------------------
 
 EASY plug controller Board *1
+
 EASY plug cable *2
+
 USB cable *1
+
 EASY plug Digital White LED Module *1
+
 EASY plug Digital Tilt Sensor *1
 
 센서 스펙을 보자
 Supply Voltage: 3.3V to 5V
+
 Interface: Digital
+
 Size: 39*20mm
+
 Weight: 5g
 
 디지털 센서이다.

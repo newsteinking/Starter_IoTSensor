@@ -16,19 +16,31 @@ chapter 21: Magnetic field detector
 -------------------------
 
 EASY plug controller Board *1
+
 EASY plug cable *2
+
 USB cable *1
+
 Magnetic-iron *1 (not included)
+
 EASY plug Active Buzzer module *1
+
 EASY plug Reed Switch Module *1
+
 
 센서 스펙을 보자.
 Working voltage: DC 3.3V-5V
+
 Working current: ≥20mA
+
 Working temperature: －10℃—＋50℃
+
 Detection distance: ≤10mm
+
 IO Interface: 3 wire interface (-/+/S)
+
 Size: 39*20mm
+
 Weight: 5g
 
 

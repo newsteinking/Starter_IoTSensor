@@ -12,16 +12,23 @@ chapter 16: Touch alarm
 -------------------------
 
 EASY plug controller Board *1
+
 EASY plug cable *2
+
 USB cable *1
+
 EASY plug Active Buzzer module *1
+
 EASY plug Capacitive Touch Sensor *1
 
 터치 센서 스펙을 보자
 
 Supply Voltage: 3.3V to 5V
+
 Interface: Digital
+
 Size: 45*20mm
+
 Weight: 5g
 
 16.2 연결 설정

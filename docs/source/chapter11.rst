@@ -11,16 +11,23 @@ chapter 11: I'm thirsty
 -------------------------
 
 EASY plug controller Board *1
+
 EASY plug cable *2
+
 USB cable *1
+
 EASY plug Active Buzzer Module *1
+
 EASY plug Soil humidity Sensor *1
 
 센서의 스펙은 다음과 같다.
 
 Power Supply Voltage: 3.3V or 5V
+
 Working Current: ≤ 20mA
+
 Output Voltage: 0-2.3V (When the sensor is totally immersed in water, the voltage will be 2.3V), the higher humidity, the higher the output voltage
+
 Sensor type: Analog output
 
 
